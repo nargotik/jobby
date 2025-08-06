@@ -12,7 +12,7 @@ class ScheduleChecker
      */
     private $now;
 
-    public function __construct(DateTimeImmutable $now = null)
+    public function __construct(?DateTimeImmutable $now = null)
     {
         $this->now = $now instanceof DateTimeImmutable ? $now : new DateTimeImmutable("now");
     }
