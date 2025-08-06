@@ -26,7 +26,7 @@ class Helper
     /**
      * @param \Swift_Mailer $mailer
      */
-    public function __construct(\Swift_Mailer $mailer = null)
+    public function __construct(?\Swift_Mailer $mailer = null)
     {
         $this->mailer = $mailer;
     }
